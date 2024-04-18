@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+:root{
+    --primary-color:#212121;
+    --white: #e7e7e7;
+    --white2:rgb(255, 255, 255,0.5);
+    --white3:rgba(51, 51, 52, 0.9);
+    --border1: 0.1px solid var(--white2);
+    --border2: 2px solid var(--white2);
+}
+nav{
+    position: fixed;
+    background: var(--primary-color);
+    width: 18%;
+    height: 100vh;
+    padding: 26px 10px;
+}
+nav .head {
+    display: flex;
+}
+nav .head .pic{
+    min-width: 25%;
+    height: 70px;
+    margin: 5px;
+}
+nav .head .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+nav .head .txt{
+    margin: auto;
+    margin-left: 1%;
+    max-width: 75%;
+    color: var(--white);
+}
+nav .head .txt span{
+    font-size: 70%;
+}
+/* =======Search bar========= */
+
+nav .search{
+    margin: 5% 10px;
+    display: flex;
+    background: var(--primary-color);
+    height: 35px;
+    width: 80%;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+nav .search input{
+    width: 90%;
+    border: none;
+    background: var(--primary-color);
+    border: var(--border1);
+    border-radius: 7px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    border-bottom: var(--border2);
+    font-size: 18px;
+    padding-left: 10px;
+    color: var(--white);
+}
+nav .search input:focus{
+    border: none;
+}
+nav .search button{
+    border-radius: 7px;
+    width: 15%;
+    display: flex;
+    flex-direction: column-reverse;
+    background: var(--primary-color);
+    padding: 3px;
+    /* border: none; */
+    border: var(--border1);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    position: relative;
+    border-bottom: var(--border2);
+}
+nav .search button i{
+    transform: rotate(90deg);
+    color: var(--white);
+    font-size: 16px;
+    /* object-fit: contain; */
+    /* padding-right: 15px; */
+    /* background: red; */
+    position: absolute;
+    right: 20%;
+}
+
+nav .links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: transparent;
+    margin: 20% 3%;
+}
+nav .links a{
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+nav .links a:hover{
+    background: var(--white3);
+}
+nav .links a:hover span{
+    transition: 1s;
+    background: var(--white2);
+
+}
+nav .links a i{
+    margin-right: 4%;
+}
+nav .links a .bi-star{
+    color: pink;
+}
+nav .links a .bi-card-list{
+    color: green;
+}
+nav .links a .bi-person{
+    color: rgb(18, 137, 18);
+}
+nav .links a .bi-house{
+    color: blue;
+}
+nav .links a .bi-people{
+    color: lightblue;
+}
+nav .links a span{
+    float: right;
+    background: var(--white3);
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+nav .links hr{
+    border: 0.3px solid rgb(255, 255, 255,0.1);
+    height: 0.5px;
+}
